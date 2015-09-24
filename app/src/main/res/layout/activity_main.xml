@@ -7,15 +7,39 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="2">
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:src="@drawable/gift_icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
 
         <LinearLayout
@@ -46,14 +70,44 @@
                 android:maxLength="12"/>
         </LinearLayout>
 
-
-        <EditText
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/contrasena"/>
+            android:orientation="horizontal"
+            android:background="@anim/bordelog"
+            android:layout_marginTop="5dp">
+
+            <co.com.codesa.clienteposmovil.vistacontrolador.autoimagen
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/userss"
+                android:id="@+id/muser"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:inputType="number"
+                android:numeric="integer"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="fill_parent"
+                android:id="@+id/contrasena"
+                android:background="@null"
+                android:textColor="#ff000000"
+                android:gravity="left|center"
+                android:hint="Contraseña"
+                android:maxLength="12"/>
+        </LinearLayout>
+
+
+
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Ingresar"
+            android:background="#00695c"
+            android:textColor="#e0f2f1"/>
 
     </LinearLayout>
 
