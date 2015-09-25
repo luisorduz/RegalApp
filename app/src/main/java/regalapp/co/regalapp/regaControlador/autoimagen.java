@@ -13,7 +13,6 @@ import android.widget.ImageView;
  * Created by Luis Orduz on 14/01/15.
  */
 
-
 public class autoimagen extends ImageView
 {
 

@@ -22,7 +22,6 @@ import android.widget.TextView;
  * fit, append with an ellipsis.
  */
 
-
 public class autotext extends TextView {
 
     // Tamaño de texto mínimo para esta textview
