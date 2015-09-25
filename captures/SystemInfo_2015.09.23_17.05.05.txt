@@ -1,0 +1,173 @@
+Applications Memory Usage (kB):
+Uptime: 250947432 Realtime: 537239448
+
+Total PSS by process:
+    33386 kB: system (pid 669)
+    27414 kB: com.android.systemui (pid 731 / activities)
+    16802 kB: com.android.launcher3 (pid 912 / activities)
+    15688 kB: com.android.inputmethod.latin (pid 856)
+    14908 kB: com.android.phone (pid 874)
+    14047 kB: zygote (pid 146)
+    13337 kB: com.android.settings (pid 22486 / activities)
+     9462 kB: android.process.acore (pid 10678)
+     9120 kB: android.process.media (pid 838)
+     8698 kB: mediaserver (pid 148)
+     7611 kB: com.android.bluetooth (pid 7691)
+     6413 kB: com.google.process.gapps (pid 23064)
+     6379 kB: com.mediatek.FMRadio (pid 27354 / activities)
+     6276 kB: com.android.deskclock (pid 30765)
+     5895 kB: com.android.mms (pid 26292)
+     5032 kB: com.mediatek.bluetooth (pid 898)
+     4637 kB: com.google.process.location (pid 1057)
+     4209 kB: com.android.providers.calendar (pid 5825)
+     4035 kB: com.android.calendar (pid 13865)
+     3848 kB: com.mediatek.voicecommand (pid 886)
+     3816 kB: mtkbt (pid 168)
+     3803 kB: drmserver (pid 147)
+     3707 kB: com.auto.gen (pid 1393)
+     3343 kB: vtservice (pid 149)
+     2816 kB: com.mediatek.systemupdate (pid 26358)
+     2575 kB: com.mediatek.appwidget.weather (pid 26346)
+     2541 kB: em_svr (pid 180)
+     2193 kB: surfaceflinger (pid 145)
+     1372 kB: logcat (pid 23455)
+     1219 kB: wpa_supplicant (pid 3049)
+      999 kB: mtk_agpsd (pid 156)
+      741 kB: rild (pid 642)
+      712 kB: netd (pid 140)
+      704 kB: logcat (pid 1186)
+      617 kB: /init (pid 1)
+      598 kB: vold (pid 131)
+      463 kB: keystore (pid 155)
+      358 kB: ueventd (pid 79)
+      348 kB: dm_agent_binder (pid 166)
+      287 kB: ccci_fsd (pid 134)
+      287 kB: debuggerd (pid 138)
+      280 kB: adbd (pid 2426)
+      279 kB: mdlogger (pid 348)
+      261 kB: ppl_agent (pid 167)
+      260 kB: GoogleOtaBinder (pid 170)
+      254 kB: nvram_agent_binder (pid 172)
+      251 kB: gsm0710muxd (pid 349)
+      245 kB: netdiag (pid 141)
+      244 kB: ccci_mdinit (pid 135)
+      240 kB: MtkCodecService (pid 159)
+      237 kB: mobile_log_d (pid 139)
+      207 kB: sdcard (pid 13589)
+      186 kB: matv (pid 152)
+      185 kB: dumpsys (pid 23482)
+      170 kB: installd (pid 153)
+      159 kB: drvbd (pid 127)
+      152 kB: healthd (pid 129)
+      131 kB: fotabinder (pid 160)
+      127 kB: 6620_launcher (pid 144)
+      123 kB: thermal (pid 175)
+      115 kB: servicemanager (pid 130)
+      115 kB: BGW (pid 516)
+      111 kB: logwrapper (pid 133)
+      106 kB: batterywarning (pid 157)
+       98 kB: thermald (pid 177)
+
+Total PSS by OOM adjustment:
+    51682 kB: Native
+               14047 kB: zygote (pid 146)
+                8698 kB: mediaserver (pid 148)
+                3816 kB: mtkbt (pid 168)
+                3803 kB: drmserver (pid 147)
+                3343 kB: vtservice (pid 149)
+                2541 kB: em_svr (pid 180)
+                2193 kB: surfaceflinger (pid 145)
+                1372 kB: logcat (pid 23455)
+                1219 kB: wpa_supplicant (pid 3049)
+                 999 kB: mtk_agpsd (pid 156)
+                 741 kB: rild (pid 642)
+                 712 kB: netd (pid 140)
+                 704 kB: logcat (pid 1186)
+                 617 kB: /init (pid 1)
+                 598 kB: vold (pid 131)
+                 463 kB: keystore (pid 155)
+                 358 kB: ueventd (pid 79)
+                 348 kB: dm_agent_binder (pid 166)
+                 287 kB: ccci_fsd (pid 134)
+                 287 kB: debuggerd (pid 138)
+                 280 kB: adbd (pid 2426)
+                 279 kB: mdlogger (pid 348)
+                 261 kB: ppl_agent (pid 167)
+                 260 kB: GoogleOtaBinder (pid 170)
+                 254 kB: nvram_agent_binder (pid 172)
+                 251 kB: gsm0710muxd (pid 349)
+                 245 kB: netdiag (pid 141)
+                 244 kB: ccci_mdinit (pid 135)
+                 240 kB: MtkCodecService (pid 159)
+                 237 kB: mobile_log_d (pid 139)
+                 207 kB: sdcard (pid 13589)
+                 186 kB: matv (pid 152)
+                 185 kB: dumpsys (pid 23482)
+                 170 kB: installd (pid 153)
+                 159 kB: drvbd (pid 127)
+                 152 kB: healthd (pid 129)
+                 131 kB: fotabinder (pid 160)
+                 127 kB: 6620_launcher (pid 144)
+                 123 kB: thermal (pid 175)
+                 115 kB: servicemanager (pid 130)
+                 115 kB: BGW (pid 516)
+                 111 kB: logwrapper (pid 133)
+                 106 kB: batterywarning (pid 157)
+                  98 kB: thermald (pid 177)
+    33386 kB: System
+               33386 kB: system (pid 669)
+    51202 kB: Persistent
+               27414 kB: com.android.systemui (pid 731 / activities)
+               14908 kB: com.android.phone (pid 874)
+                5032 kB: com.mediatek.bluetooth (pid 898)
+                3848 kB: com.mediatek.voicecommand (pid 886)
+     6379 kB: Foreground
+                6379 kB: com.mediatek.FMRadio (pid 27354 / activities)
+    12248 kB: Visible
+                7611 kB: com.android.bluetooth (pid 7691)
+                4637 kB: com.google.process.location (pid 1057)
+    15688 kB: Perceptible
+               15688 kB: com.android.inputmethod.latin (pid 856)
+    16802 kB: Home
+               16802 kB: com.android.launcher3 (pid 912 / activities)
+     3707 kB: B Services
+                3707 kB: com.auto.gen (pid 1393)
+    64138 kB: Cached
+               13337 kB: com.android.settings (pid 22486 / activities)
+                9462 kB: android.process.acore (pid 10678)
+                9120 kB: android.process.media (pid 838)
+                6413 kB: com.google.process.gapps (pid 23064)
+                6276 kB: com.android.deskclock (pid 30765)
+                5895 kB: com.android.mms (pid 26292)
+                4209 kB: com.android.providers.calendar (pid 5825)
+                4035 kB: com.android.calendar (pid 13865)
+                2816 kB: com.mediatek.systemupdate (pid 26358)
+                2575 kB: com.mediatek.appwidget.weather (pid 26346)
+
+Total PSS by category:
+    75114 kB: Dalvik
+    52358 kB: .so mmap
+    36934 kB: .dex mmap
+    35882 kB: Unknown
+    34988 kB: Dalvik Other
+     5230 kB: Native
+     5182 kB: Other mmap
+     4284 kB: Stack
+     4153 kB: .apk mmap
+      539 kB: .ttf mmap
+      252 kB: Other dev
+      172 kB: .jar mmap
+      140 kB: Ashmem
+        4 kB: Cursor
+        0 kB: code mmap
+        0 kB: image mmap
+        0 kB: Graphics
+        0 kB: GL
+        0 kB: Memtrack
+
+Total RAM: 475644 kB
+ Free RAM: 233110 kB (64138 cached pss + 111008 cached + 57964 free)
+ Used RAM: 219270 kB (191094 used pss + 4300 buffers + 412 shmem + 23464 slab)
+ Lost RAM: 23264 kB
+     ZRAM: 4 kB physical used for 0 kB in swap (393212 kB total swap)
+   Tuning: 96 (large 128), oom 69713 kB, restore limit 23237 kB (low-ram)
