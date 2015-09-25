@@ -1,4 +1,4 @@
-package regalapp.co.regalapp.regaControlador;
+package regalapp.co.regalapp.regaUtilidades;
 
 /*
 * Esta activity cumple la funcion de reducir el texto al tamaño ideal
