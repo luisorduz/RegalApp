@@ -113,11 +113,11 @@
                 android:layout_marginBottom="20dp"
                 android:text="INGRESAR"
                 android:textStyle="bold"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:gravity="center"
                 android:background="#00695c"
                 android:textColor="#e0f2f1"
-                android:id="@+id/ingresar"
+                android:id="@+id/btn_Ingresar"
                 ripple:alphaFactor="0.7"
                 ripple:rippleColor="#58FAAC"
                 ripple:hover="true"/>
