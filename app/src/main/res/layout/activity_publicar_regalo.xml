@@ -71,7 +71,8 @@
             android:background="@anim/bordelogcategoria"
             ripple:rv_color="#9C27B0"
             ripple:rv_type="rectangle"
-            ripple:rv_zoom="true">
+            ripple:rv_zoom="true"
+            android:id="@+id/RPtomar_Foto">
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -111,8 +112,7 @@
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="80"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"
+
             android:paddingTop="10dp"
             android:orientation="vertical">
 
@@ -141,7 +141,7 @@
                     android:background="@null"
                     android:textColor="#ff000000"
                     android:gravity="left|center"
-                    android:hint="Usuario"
+                    android:hint="Titulo"
                     android:maxLength="12"/>
             </LinearLayout>
 
@@ -156,8 +156,8 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/ic_action_lock"
-                    android:id="@+id/mpass"
+                    android:src="@drawable/ic_social_person"
+                    android:id="@+id/muser"
                     android:layout_weight="2"/>
 
                 <EditText
@@ -170,7 +170,7 @@
                     android:background="@null"
                     android:textColor="#ff000000"
                     android:gravity="left|center"
-                    android:hint="Contraseña"
+                    android:hint="Descripcion"
                     android:maxLength="12"/>
             </LinearLayout>
 
@@ -185,8 +185,48 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/ic_action_lock"
-                    android:id="@+id/mpass"
+                    android:src="@drawable/ic_social_person"
+                    android:id="@+id/muser"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="fill_parent"
+                    >
+
+                    <EditText
+                        android:inputType="text"
+                        android:textSize="9pt"
+                        android:layout_width="0dp"
+                        android:layout_weight="10"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/contrasena"
+                        android:background="@null"
+                        android:textColor="#ff000000"
+                        android:gravity="left|center"
+                        android:hint="Estado"
+                        android:maxLength="12"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="horizontal"
+                android:background="@anim/bordelog"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_social_person"
+                    android:id="@+id/muser"
                     android:layout_weight="2"/>
 
                 <EditText
@@ -199,7 +239,7 @@
                     android:background="@null"
                     android:textColor="#ff000000"
                     android:gravity="left|center"
-                    android:hint="Contraseña"
+                    android:hint="Numero de postulado"
                     android:maxLength="12"/>
             </LinearLayout>
             <LinearLayout
@@ -213,8 +253,8 @@
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/ic_action_lock"
-                    android:id="@+id/mpass"
+                    android:src="@drawable/ic_social_person"
+                    android:id="@+id/muser"
                     android:layout_weight="2"/>
 
                 <EditText
@@ -227,35 +267,7 @@
                     android:background="@null"
                     android:textColor="#ff000000"
                     android:gravity="left|center"
-                    android:hint="Contraseña"
-                    android:maxLength="12"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="35"
-                android:orientation="horizontal"
-                android:background="@anim/bordelog"
-                android:layout_marginTop="5dp">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:src="@drawable/ic_action_lock"
-                    android:id="@+id/mpass"
-                    android:layout_weight="2"/>
-
-                <EditText
-                    android:inputType="text"
-                    android:textSize="9pt"
-                    android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="fill_parent"
-                    android:id="@+id/contrasena"
-                    android:background="@null"
-                    android:textColor="#ff000000"
-                    android:gravity="left|center"
-                    android:hint="Contraseña"
+                    android:hint="Categoria"
                     android:maxLength="12"/>
             </LinearLayout>
 
@@ -278,22 +290,7 @@
                 ripple:rippleColor="#00897b"
                 ripple:hover="true"/>
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="15"
-                android:layout_gravity="center"
-                android:gravity="center">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Registrarse"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="#ffffff"
-                    android:textSize="7pt"/>
-            </LinearLayout>
 
         </LinearLayout>
 
