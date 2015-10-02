@@ -60,10 +60,10 @@
                     android:layout_weight="2"/>
 
                 <EditText
-                    android:inputType="textEmailAddress"
-                    android:numeric="integer"
+                    android:inputType="text"
                     android:layout_width="0dp"
                     android:layout_weight="10"
+                    android:textSize="9pt"
                     android:layout_height="fill_parent"
                     android:id="@+id/usuario"
                     android:background="@null"
@@ -89,8 +89,8 @@
                     android:layout_weight="2"/>
 
                 <EditText
-                    android:inputType="number"
-                    android:numeric="integer"
+                    android:inputType="text"
+                    android:textSize="9pt"
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="fill_parent"
@@ -108,10 +108,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="30"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="9pt"
                 android:text="INGRESAR"
-                android:textStyle="bold"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:background="@anim/bordelogok"
@@ -121,14 +121,22 @@
                 ripple:rippleColor="#00897b"
                 ripple:hover="true"/>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="15"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Registrarse"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColor="#ffffff"/>
+                android:textColor="#ffffff"
+                android:textSize="7pt"/>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -149,6 +157,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="Copiryght 2015"
+            android:textSize="7pt"
             android:textColor="#fff"
             android:layout_gravity="center"
             android:gravity="center"/>

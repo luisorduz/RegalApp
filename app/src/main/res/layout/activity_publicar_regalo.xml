@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0f2f1">
+
+    <!--Header -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@xml/borde_redondeado"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="18">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_list"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="70"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="Publicar regalo"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="18">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_communication_location_on"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Fin Header -->
+
+    <!--Body -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <com.andexert.library.RippleView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+            android:background="@anim/bordelogcategoria"
+            ripple:rv_color="#9C27B0"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="20">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/ic_camara"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="20"
+                    android:text="Agregar foto"
+                    android:textSize="9pt"
+                    android:textColor="#546e7a"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"/>
+            </LinearLayout>
+
+
+
+        </com.andexert.library.RippleView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="horizontal"
+                android:background="@anim/bordelog">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_social_person"
+                    android:id="@+id/muser"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:inputType="text"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:textSize="9pt"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/usuario"
+                    android:background="@null"
+                    android:textColor="#ff000000"
+                    android:gravity="left|center"
+                    android:hint="Usuario"
+                    android:maxLength="12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="horizontal"
+                android:background="@anim/bordelog"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_lock"
+                    android:id="@+id/mpass"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:inputType="text"
+                    android:textSize="9pt"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/contrasena"
+                    android:background="@null"
+                    android:textColor="#ff000000"
+                    android:gravity="left|center"
+                    android:hint="Contraseña"
+                    android:maxLength="12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="horizontal"
+                android:background="@anim/bordelog"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_lock"
+                    android:id="@+id/mpass"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:inputType="text"
+                    android:textSize="9pt"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/contrasena"
+                    android:background="@null"
+                    android:textColor="#ff000000"
+                    android:gravity="left|center"
+                    android:hint="Contraseña"
+                    android:maxLength="12"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="horizontal"
+                android:background="@anim/bordelog"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_lock"
+                    android:id="@+id/mpass"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:inputType="text"
+                    android:textSize="9pt"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/contrasena"
+                    android:background="@null"
+                    android:textColor="#ff000000"
+                    android:gravity="left|center"
+                    android:hint="Contraseña"
+                    android:maxLength="12"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="horizontal"
+                android:background="@anim/bordelog"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_lock"
+                    android:id="@+id/mpass"
+                    android:layout_weight="2"/>
+
+                <EditText
+                    android:inputType="text"
+                    android:textSize="9pt"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/contrasena"
+                    android:background="@null"
+                    android:textColor="#ff000000"
+                    android:gravity="left|center"
+                    android:hint="Contraseña"
+                    android:maxLength="12"/>
+            </LinearLayout>
+
+
+
+            <regalapp.co.regalapp.regaUtilidades.RippleView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="9pt"
+                android:text="INGRESAR"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@anim/bordelogok"
+                android:textColor="#e0f2f1"
+                android:id="@+id/btn_Ingresar"
+                ripple:alphaFactor="0.7"
+                ripple:rippleColor="#00897b"
+                ripple:hover="true"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrarse"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="7pt"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    <!--Fin Body -->
+
+</LinearLayout>
