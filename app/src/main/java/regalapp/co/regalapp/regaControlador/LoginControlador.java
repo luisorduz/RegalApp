@@ -12,7 +12,7 @@ import android.view.Window;
 import regalapp.co.regalapp.R;
 import regalapp.co.regalapp.regaUtilidades.RippleView;
 
-public class MainActivity extends Activity {
+public class LoginControlador extends Activity {
 
     private RippleView btn_Ingresar;
 
@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
         btn_Ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ingresar = new Intent(getApplicationContext(),homeControlador.class);
+                Intent ingresar = new Intent(getApplicationContext(),HomeControlador.class);
                 startActivity(ingresar);
             }
         });
