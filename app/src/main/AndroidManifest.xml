@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".regaControlador.HomeControlador"
+        <activity android:name=".regaControlador.CasaControlador"
             android:label="Home"></activity>
     </application>
 

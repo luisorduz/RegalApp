@@ -30,7 +30,7 @@ public class LoginControlador extends Activity {
         btn_Ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ingresar = new Intent(getApplicationContext(),HomeControlador.class);
+                Intent ingresar = new Intent(getApplicationContext(),CasaControlador.class);
                 startActivity(ingresar);
             }
         });
