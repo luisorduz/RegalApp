@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".regaControlador.MainActivity"
+            android:name=".regaControlador.LoginControlador"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".regaControlador.homeControlador"
+        <activity android:name=".regaControlador.HomeControlador"
             android:label="Home"></activity>
     </application>
 
