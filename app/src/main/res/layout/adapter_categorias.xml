@@ -4,32 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     xmlns:ripple="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@anim/bordelogcategoria">
 
-
-    <LinearLayout
-        android:layout_width="fill_parent"
+    <com.andexert.library.RippleView
         android:layout_height="fill_parent"
-        android:clickable="true"
-        >
+        android:layout_width="fill_parent"
+        ripple:rv_color="#009688"
+        ripple:rv_type="rectangle"
+        ripple:rv_zoom="true">
 
-        <ImageButton
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:id="@+id/IMcategoria"
-            />
+            android:clickable="true">
 
-        <regalapp.co.regalapp.regaUtilidades.RippleView
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="4"
-            android:id="@+id/TVcategoria"
-            ripple:alphaFactor="0.7"
-            ripple:rippleColor="#58FAAC"
-            ripple:hover="true"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/IMcategoria"
+                android:layout_gravity="center"
+                />
 
-    </LinearLayout>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:id="@+id/TVcategoria"
+                android:text="categoria"
+                android:textSize="10pt"
+                android:textColor="#546e7a"
+                android:gravity="center|left"
+                android:textStyle="bold|italic"
+
+                />
+        </LinearLayout>
+
+    </com.andexert.library.RippleView>
 
 
 
