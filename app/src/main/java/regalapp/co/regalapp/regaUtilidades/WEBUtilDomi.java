@@ -14,7 +14,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Created by Juliana on 20/08/2015.
+ * Created by AndresOs on 30/09/15.
  */
 public class WEBUtilDomi {
 
