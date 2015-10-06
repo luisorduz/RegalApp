@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0f2f1">
+
+    <!--Header -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@xml/borde_redondeado"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="18">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_list"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="70"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="Registrarse"/>
+
+            <!--<ImageButton
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/regalaap_icon"
+                android:layout_gravity="center"
+                />-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="18">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_communication_location_on"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Fin Header -->
+
+    <!--Body -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:id="@+id/nombre_registro"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:id="@+id/usuario_registro"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/password_registro"/>
+
+        <com.andexert.library.RippleView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRARSE"
+                android:onClick="hacerRegistro"
+                android:background="@anim/bordelogok"
+                android:textColor="#fff"
+                android:textSize="9pt"/>
+
+        </com.andexert.library.RippleView>
+
+
+
+
+
+    </LinearLayout>
+    <!--Fin Body -->
+
+</LinearLayout>

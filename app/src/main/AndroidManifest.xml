@@ -2,6 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="regalapp.co.regalapp" >
 
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        />
+    <uses-permission
+        android:name="android.permission.INTERNET">
+    </uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -21,6 +31,8 @@
                   android:label="Home"></activity>
         <activity android:name=".regaControlador.PublicarRegaloControlador"
                    android:label="Publicar Regalo"></activity>
+        <activity android:name=".regaControlador.RegistrarseControlador"
+            android:label="Registrarse"></activity>
     </application>
 
 </manifest>

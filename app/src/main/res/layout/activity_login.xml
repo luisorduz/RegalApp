@@ -135,7 +135,8 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:textSize="7pt"/>
+                android:textSize="7pt"
+                android:id="@+id/registrarse"/>
             </LinearLayout>
 
         </LinearLayout>

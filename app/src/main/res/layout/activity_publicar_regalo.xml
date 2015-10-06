@@ -67,7 +67,7 @@
         <com.andexert.library.RippleView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="20"
+        android:layout_weight="25"
             android:background="@anim/bordelogcategoria"
             ripple:rv_color="#9C27B0"
             ripple:rv_type="rectangle"
@@ -87,8 +87,9 @@
 
                     <ImageView
                         android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:src="@drawable/ic_camara"/>
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_camara"
+                        android:id="@+id/IVfoto"/>
                 </LinearLayout>
 
 
@@ -182,33 +183,33 @@
                 android:background="@anim/bordelog"
                 android:layout_marginTop="5dp">
 
-                <ImageView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/ic_social_person"
-                    android:id="@+id/muser"
-                    android:layout_weight="2"/>
+                    android:layout_weight="3"
+                    android:text="Estado:"
+                    android:textSize="9pt"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="9pt"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/TVestado"/>
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="10"
-                    android:layout_height="fill_parent"
-                    >
+                    android:layout_weight="6"
+                    android:layout_height="fill_parent">
 
-                    <EditText
-                        android:inputType="text"
-                        android:textSize="9pt"
-                        android:layout_width="0dp"
-                        android:layout_weight="10"
+                    <SeekBar
+                        android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:id="@+id/contrasena"
-                        android:background="@null"
-                        android:textColor="#ff000000"
-                        android:gravity="left|center"
-                        android:hint="Estado"
-                        android:maxLength="12"/>
-
-
+                        android:id="@+id/SBestado"/>
 
                 </LinearLayout>
 
@@ -222,25 +223,35 @@
                 android:background="@anim/bordelog"
                 android:layout_marginTop="5dp">
 
-                <ImageView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:src="@drawable/ic_social_person"
-                    android:id="@+id/muser"
-                    android:layout_weight="2"/>
-
-                <EditText
-                    android:inputType="text"
+                    android:layout_weight="3"
+                    android:text="Postulados:"
                     android:textSize="9pt"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="10"
                     android:layout_height="fill_parent"
-                    android:id="@+id/contrasena"
-                    android:background="@null"
-                    android:textColor="#ff000000"
-                    android:gravity="left|center"
-                    android:hint="Numero de postulado"
-                    android:maxLength="12"/>
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="9pt"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/TVpostulados"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="fill_parent">
+
+                    <SeekBar
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/SBpostulados"/>
+
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -257,18 +268,13 @@
                     android:id="@+id/muser"
                     android:layout_weight="2"/>
 
-                <EditText
-                    android:inputType="text"
-                    android:textSize="9pt"
+                <Spinner
                     android:layout_width="0dp"
                     android:layout_weight="10"
                     android:layout_height="fill_parent"
-                    android:id="@+id/contrasena"
-                    android:background="@null"
-                    android:textColor="#ff000000"
-                    android:gravity="left|center"
-                    android:hint="Categoria"
-                    android:maxLength="12"/>
+                    android:id="@+id/SPcategorias"></Spinner>
+
+
             </LinearLayout>
 
 
