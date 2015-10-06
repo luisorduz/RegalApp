@@ -12,11 +12,11 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
-/**
- * Created by andresorduz on 28/09/15.
- */
 
-public class WEBUtilDomi {
+/**
+ * Created by andresorduz on 5/10/15.
+ */
+public class WebUtil {
 
     //HACER EL POST REQUEST ps si
     public static String POSTrequest(String url, Uri.Builder builder) throws IOException {
@@ -46,7 +46,7 @@ public class WEBUtilDomi {
         }
         is.close();
         connection.disconnect();
-        
+
         return new String(bytes.toByteArray(), "UTF-8");
     }
 
