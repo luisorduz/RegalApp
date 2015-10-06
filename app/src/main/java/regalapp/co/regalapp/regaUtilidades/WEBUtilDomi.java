@@ -18,7 +18,7 @@ import java.net.URL;
 
 public class WEBUtilDomi {
 
-    //HACER EL POST REQUEST
+    //HACER EL POST REQUEST ps si
     public static String POSTrequest(String url, Uri.Builder builder) throws IOException {
         URL page = new URL(url);
         HttpURLConnection connection = (HttpURLConnection) page.openConnection();
