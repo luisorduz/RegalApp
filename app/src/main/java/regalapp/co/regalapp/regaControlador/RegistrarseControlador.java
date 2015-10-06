@@ -12,7 +12,6 @@ import android.widget.Toast;
 import java.io.IOException;
 
 import regalapp.co.regalapp.R;
-import regalapp.co.regalapp.regaUtilidades.WEBUtilDomi;
 
 /**
  * Created by andresorduz on 28/09/15.
