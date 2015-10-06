@@ -13,9 +13,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by AndresOs on 30/09/15.
- */
 public class WEBUtilDomi {
 
     //HACER EL POST REQUEST
