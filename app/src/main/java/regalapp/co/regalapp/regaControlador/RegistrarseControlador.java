@@ -12,6 +12,7 @@ import android.widget.Toast;
 import java.io.IOException;
 
 import regalapp.co.regalapp.R;
+import regalapp.co.regalapp.regaUtilidades.WebUtil;
 
 /**
  * Created by andresorduz on 28/09/15.
@@ -55,10 +56,10 @@ public class RegistrarseControlador extends Activity {
             builder.appendQueryParameter("nombre",str_nombre)
                     .appendQueryParameter("usuario",str_usuario)
                     .appendQueryParameter("password", str_password);
-            String url = "http://172.16.128.80:8080/WebService/webresources/servicio/registrarse";
+            String url = "http://www.andresorduz.co/model_regalapp/dao_login/request_registrarUsuarios.php";
 
             try {
-                String respuesta = WEBUtilDomi.POSTrequest(url, builder);
+                String respuesta = WebUtil.POSTrequest(url, builder);
                 return respuesta;
             } catch (IOException e) {
                 e.printStackTrace();

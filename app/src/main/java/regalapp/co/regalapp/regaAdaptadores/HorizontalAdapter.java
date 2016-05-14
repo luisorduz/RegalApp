@@ -11,17 +11,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import regalapp.co.regalapp.R;
-import regalapp.co.regalapp.regaUtilidades.RippleView;
 
 /**
- * Created by AndresOs on 30/09/15.
+ * Created by andresorduz on 8/10/15.
  */
-public class CategoriasArrayAdapter extends ArrayAdapter<String> {
+public class HorizontalAdapter extends ArrayAdapter<String> {
     private final Context context;
     private final String[] values;
 
-    public CategoriasArrayAdapter(Context context, String[] values) {
-        super(context, R.layout.adapter_categorias, values);
+    public HorizontalAdapter(Context context, String[] values) {
+        super(context, R.layout.adapter_horizontal, values);
         this.context = context;
         this.values = values;
     }
@@ -32,39 +31,40 @@ public class CategoriasArrayAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-
-        View rowView = inflater.inflate(R.layout.adapter_categorias, parent, false);
-        TextView textView = (TextView) rowView.findViewById(R.id.TVcategoria);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.IMcategoria);
-        imageView.setBackground(null);
+        View rowView = inflater.inflate(R.layout.adapter_horizontal, parent, false);
+        TextView textView = (TextView) rowView.findViewById(R.id.TVhorizontal);
         textView.setText(values[position]);
+
+        ImageView imageCategoriaH = (ImageView) rowView.findViewById(R.id.IMcategoriaH);
         // Change the icon for Windows and iPhone
         String s = values[position];
 
         if (s.startsWith("Hogar")) {
-            imageView.setImageResource(R.drawable.ic_action_home);
+            imageCategoriaH.setImageResource(R.drawable.ic_action_home);
         }
+
         if (s.startsWith("Electrodomésticos")) {
-            imageView.setImageResource(R.drawable.ic_electrodomesticos);
+            imageCategoriaH.setImageResource(R.drawable.ic_electrodomesticos);
         }
         if (s.startsWith("Deportes")) {
-            imageView.setImageResource(R.drawable.ic_deportes);
+            imageCategoriaH.setImageResource(R.drawable.ic_deportes);
         }
         if (s.startsWith("Mascotas")) {
-            imageView.setImageResource(R.drawable.ic_mascotas);
+            imageCategoriaH.setImageResource(R.drawable.ic_mascotas);
         }
         if (s.startsWith("Tecnología")) {
-            imageView.setImageResource(R.drawable.ic_tecnologia);
+            imageCategoriaH.setImageResource(R.drawable.ic_tecnologia);
         }
         if (s.startsWith("Servicios")) {
-            imageView.setImageResource(R.drawable.ic_servicios);
+            imageCategoriaH.setImageResource(R.drawable.ic_servicios);
         }
         if (s.startsWith("Uso hombre")) {
-            imageView.setImageResource(R.drawable.ic_uso_hombre);
+            imageCategoriaH.setImageResource(R.drawable.ic_uso_hombre);
         }
         if (s.startsWith("Uso mujer")) {
-            imageView.setImageResource(R.drawable.ic_uso_mujer);
+            imageCategoriaH.setImageResource(R.drawable.ic_uso_mujer);
         }
         return rowView;
     }
 }
+

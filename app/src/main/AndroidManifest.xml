@@ -33,6 +33,8 @@
                    android:label="Publicar Regalo"></activity>
         <activity android:name=".regaControlador.RegistrarseControlador"
             android:label="Registrarse"></activity>
+        <activity android:name=".regaControlador.RecyclerView_Activity"
+            android:label="Recycler"></activity>
     </application>
 
 </manifest>
